@@ -1,7 +1,3 @@
-#$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
-#export LD_LIBRARY_PATH =/path/to/library_directory/home/amish/.local/lib/python3.11/site-packages/tensorflow/
-#echo $LD_LIBRARY_PATH
-#/home/amish/.local/lib/python3.11/site-packages
 
 import cv2
 import glob
@@ -36,10 +32,10 @@ rating_path = parent_path + "/SCUT-FBP5500_v2/All_Ratings/"
 
 print(data_path) 
 
-data = pd.read_csv('/home/amish/Desktop/ml_project/SCUT-FBP5500_v2/train_test_files/All_labels.txt', sep='\t')
+data = pd.read_csv('/ml_project/SCUT-FBP5500_v2/train_test_files/All_labels.txt', sep='\t')
 model_name = 'Beauty_Prediction'
-model_dir = '/home/amish/Desktop/ml_project'
-DATA_DIR = '/home/amish/Desktop/ml_project/SCUT-FBP5500_v2/Images/'
+model_dir = '/ml_project'
+DATA_DIR = '/ml_project/SCUT-FBP5500_v2/Images/'
 LABELS_FILE = 'All_labels.txt'
 
 def create_dataset(target_size):
