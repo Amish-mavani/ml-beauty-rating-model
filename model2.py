@@ -13,11 +13,11 @@ from tensorflow.keras.layers import Flatten, Dense, Dropout
 import cv2
 #import matplotlib.pyplot as plt
 
-data = pd.read_csv('/home/amish/Desktop/ml_project/SCUT-FBP5500_v2/train_test_files/All_labels.txt', sep='\t')
+data = pd.read_csv('/ml_project/SCUT-FBP5500_v2/train_test_files/All_labels.txt', sep='\t')
 
 data.head()
 
-DATA_DIR = '/home/amish/Desktop/ml_project/SCUT-FBP5500_v2/Images/'
+DATA_DIR = '/ml_project/SCUT-FBP5500_v2/Images/'
 LABELS_FILE = 'All_labels.txt'
 
 target_size = (150,150)
